@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Multiplier</title>
+</head>
+<body>
+    <h1>Multiply Two Numbers</h1>
+    <form method="POST">
+        <input type="number" name="num1" placeholder="Enter first number" required>
+        <input type="number" name="num2" placeholder="Enter second number" required>
+        <button type="submit">Multiply</button>
+    </form>
+
+    {% if result is not none %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
+
